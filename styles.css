@@ -1,0 +1,238 @@
+	html {
+		box-sizing: border-box;
+		scroll-behavior: smooth;
+	}
+	
+	
+	*, *:before, *:after {
+		box-sizing:inherit;
+	}
+	
+	img {
+		max-width: 100%;
+	}
+	
+	
+/* Typing Animation */
+
+/*	
+	.typing{
+		width:50ch;
+		animation: typing 2s steps(25), blink .5s step-end infinite alternate;
+		white-space: nowrap;
+		overflow: hidden;
+		border-right: 3px solid;
+		font-family: monospace;
+		font-size: 2em;
+	}
+	
+	@keyframes typing {
+		from {
+		width: 0
+		}
+	}
+	
+	@keyframes blink {
+		50% {
+			border-color: transparent;
+		}
+	}
+*/
+
+  	square {
+  		height: 50px;
+  		width: 50px;
+  		background-color: #555;
+}
+	
+	
+/* speech Bubble */
+	.speech-bubble {
+		position: relative;
+		background: red;
+		border-radius: .4em;
+		width: 400px;
+		height: 400px;
+}
+
+
+	.speech-bubble:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: 0;
+		height: 0;
+		border: 32px solid transparent;
+		border-right-color: red;
+		border-left: 0;
+		border-bottom: 0;
+		margin-top: -16px;
+		margin-left: -32px;
+}
+
+.speech-bubble-two {
+		position: right bottom;
+		background: #2f69ef;
+		border-radius: .4em;
+		width: 400px;
+		height: 600px;
+}
+
+/*
+	.speech-bubble-two:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #00aabb;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+*/
+
+/* Button */
+
+a:link, a:visited {
+  background-color: #8510d8;
+  border: none;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+	a:hover, a:active {
+	background-color: #2f69ef; 
+	color: pink; 
+  	border: 2px solid #2f69ef;
+  	font-style: italic;
+  }
+  
+/* bro idk this is a test */
+
+	b:hover, b:active {
+	background-color: #2f69ef; 
+	color: yellow; 
+  	border: 2px solid #2f69ef;
+  	font-family: ff-real-headline-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+
+  }
+
+/* Grids */
+
+/*	.container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(1fr);
+		grid-gap: 10px;
+		grid-auto-flow: dense;
+		grid-auto-rows: 600px;
+	}
+*/	
+	
+		.box {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 10px;
+		grid-auto-flow: dense;
+	}
+	
+		.square {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 10px;
+		grid-auto-flow: dense;
+	}
+	
+	.item {
+		background-color: lightblue;
+		font-family: ff-real-text-pro-2, sans-serif;
+		font-weight: 400;
+		font-style: normal;
+	}
+	
+	.item1 {
+		background-color: white;
+		text-align: center;
+
+	}
+	
+	.item2 {
+		background-color: #2f69ef;
+		grid-column: 1 / span 3;
+		font-size: 70px;
+		padding: 30px;
+		color: #4f81f3;
+	}
+	
+	.item3 {
+		background-color: yellow;
+		grid-column: 1/ span 2;
+		font-size: 300px;
+		color: #ffff7b;
+	}
+	
+	.item4 {
+		background-color: white;
+		font-size: 90px;
+	}
+	
+	.item5 {
+		background-color: orange;
+	}
+	
+	.item6 {
+		background-color: yellow;
+	}
+	
+	.item7 {
+		background-color: red;
+		
+	
+	.item8 {
+		background-color: yellow;
+		grid-column: 1 / span 3;
+	}
+	
+	.item9 {
+		background-color: red;
+	}
+	
+	.item10 {
+		background-color: orange;
+	}
+	
+	.item11 {
+		background-color: yellow;
+	}
+	
+	.item12 {
+		background-color: red;
+		
+		
+/* Text */
+
+	h2{
+		color: rgba(0, 0, 0, 0.5);
+	}
+
+	b.thick {
+		font-weight: bold;
+	}
+	
+	a.b {
+		font-style: italic;
+	}
